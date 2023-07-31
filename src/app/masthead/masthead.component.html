@@ -1,6 +1,10 @@
 <header class="masthead">
-  <video *ngIf="!isMobileScreen" src="assets/video/backgroundVideoNetflixDesktop.mp4" autoplay="true" muted="true" loop="true"></video>
-  <video *ngIf="isMobileScreen" src="assets/video/backgroundVideoNetflixMobile.mp4" autoplay="true" muted="true" loop="true"></video>
+  <video *ngIf="!isMobileScreen" autoplay="true" muted="true" loop="true">
+    <source src="assets/video/backgroundVideoNetflixDesktop.mp4" type="video/mp4">
+  </video>
+  <video *ngIf="isMobileScreen" autoplay="true" muted="true" loop="true">
+    <source src="assets/video/backgroundVideoNetflixMobile.mp4" type="video/mp4">
+  </video>
   <div id="contenedor-masthead">
     <div class="d-flex justify-content-center">
       <div class="text-center">
