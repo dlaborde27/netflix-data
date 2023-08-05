@@ -37,18 +37,38 @@ describe("AppComponent", () => {
         expect(compiled.querySelector('app-navigation')).not.toBe(null);
     });
 
-    it(`should have as title 'netflix-data'`, () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        const app = fixture.componentInstance;
-        expect(app.title).toEqual("netflix-data");
-    });
-
-    it("should render title", () => {
+    it("should create the headComponent", () => {
         const fixture = TestBed.createComponent(AppComponent);
         fixture.detectChanges();
-        const compiled = fixture.nativeElement as HTMLElement;
-        expect(compiled.querySelector(".content span")?.textContent).toContain(
-            "netflix-data app is running!"
-        );
+        const compiled = fixture.debugElement.nativeElement;
+        expect(compiled.querySelector("app-masthead")).not.toBe(null);
+    });
+
+    it("should create the projectComponent", () => {
+        const fixture = TestBed.createComponent(AppComponent);
+        fixture.detectChanges();
+        const compiled = fixture.debugElement.nativeElement;
+        expect(compiled.querySelector("app-project")).not.toBe(null);
+    });
+
+    it("should create the tableComponent", () => {
+        const fixture = TestBed.createComponent(AppComponent);
+        fixture.detectChanges();
+        const compiled = fixture.debugElement.nativeElement;
+        expect(compiled.querySelector("app-tablefilm")).not.toBe(null);
+    });
+
+    it("should create the pieChartComponent", () => {
+        const fixture = TestBed.createComponent(AppComponent);
+        fixture.detectChanges();
+        const compiled = fixture.debugElement.nativeElement;
+        expect(compiled.querySelector("app-piechart")).not.toBe(null);
+    });
+
+    it("should create the footerComponent", () => {
+        const fixture = TestBed.createComponent(AppComponent);
+        fixture.detectChanges();
+        const compiled = fixture.debugElement.nativeElement;
+        expect(compiled.querySelector("app-footer")).not.toBe(null);
     });
 });
