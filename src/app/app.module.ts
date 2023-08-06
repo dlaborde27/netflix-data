@@ -11,8 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { PiechartComponent } from './piechart/piechart.component';
-import { TablefilmComponent } from './tablefilm/tablefilm.component'
-
+import { TablefilmComponent } from './tablefilm/tablefilm.component';
+import { HistoryComponent } from './history/history.component'
+import { CarouselModule } from '@coreui/angular';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { TablefilmComponent } from './tablefilm/tablefilm.component'
     ProjectComponent,
     FooterComponent,
     PiechartComponent,
-    TablefilmComponent
+    TablefilmComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { TablefilmComponent } from './tablefilm/tablefilm.component'
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    HttpClientModule
+    HttpClientModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
