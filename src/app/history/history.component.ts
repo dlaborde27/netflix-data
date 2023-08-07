@@ -112,7 +112,7 @@ export class HistoryComponent implements OnInit {
     }
     this.slides[16] = {
       id: 16,
-      src: './assets/img/history/2015.png',
+      src: './assets/img/history/2015.jpg',
       title: '2015',
       subtitle: 'Estreno de nuestro primer largometraje original ("Beasts of No Nation"), nuestra primera serie original de habla no inglesa ("Club de Cuervos") y nuestro primer original asiático ("Terrace House"). Continúa la expansión por Australia, Cuba, España, Italia, Japón, Nueva Zelanda y Portugal. Lanzamiento con "Daredevil" de las descripciones sonoras para personas con discapacidad visual.'
     }
@@ -148,7 +148,7 @@ export class HistoryComponent implements OnInit {
       }
     this.slides[22] = {
         id: 22,
-        src: './assets/img/history/2021.jpg',
+        src: './assets/img/history/2021.png',
         title: '2021',
         subtitle: "El número de suscriptores supera los 200 millones. Netflix estrena su primer estudio de diversidad en películas y series, en colaboración con la Iniciativa de Inclusión Annenberg de la Universidad del Sur de California (USC), y anuncia sus planes para lograr cero emisiones netas de gases de efecto invernadero a finales de 2022. Netflix lanza juegos para móviles."
       }
