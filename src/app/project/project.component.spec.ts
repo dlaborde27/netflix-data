@@ -18,4 +18,10 @@ describe('ProjectComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it("projects id", () => {
+      const headerElement: HTMLElement = fixture.nativeElement;
+      const projects = headerElement.querySelector("#projects");
+      expect(projects).toBeTruthy();
+  });
 });

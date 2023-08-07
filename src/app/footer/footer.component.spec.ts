@@ -18,4 +18,10 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it("footer element", () => {
+      const headerElement: HTMLElement = fixture.nativeElement;
+      const footer = headerElement.querySelector("footer");
+      expect(footer).toBeTruthy();
+  });
 });

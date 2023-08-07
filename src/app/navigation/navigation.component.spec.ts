@@ -18,4 +18,10 @@ describe('NavigationComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it("nav element", () => {
+      const headerElement: HTMLElement = fixture.nativeElement;
+      const nav = headerElement.querySelector("nav");
+      expect(nav).toBeTruthy();
+  });
 });

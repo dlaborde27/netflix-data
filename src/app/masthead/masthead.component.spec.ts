@@ -18,4 +18,10 @@ describe('MastheadComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it("header element", () => {
+      const headerElement: HTMLElement = fixture.nativeElement;
+      const header = headerElement.querySelector("header");
+      expect(header).toBeTruthy();
+  });
 });

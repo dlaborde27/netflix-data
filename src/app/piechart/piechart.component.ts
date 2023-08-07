@@ -16,7 +16,6 @@ export class PiechartComponent {
   ngOnInit() {
     this.dataProvider.getResponse().subscribe(response => {
       this.data = (response as Collection[])
-      console.log(this.data)
       this.createChart(this.data);
     })
     
