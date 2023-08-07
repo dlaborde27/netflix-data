@@ -1,14 +1,26 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
 div{
-    width: 100%;
+    width: 80%;
     max-height: 200%;
     margin: 0 auto;
     
 }
 div{
-    background-color: #831010;
+    background-color: black;
 }
 h3{
     color:#831010;
     font-weight: bold;
 }
-
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}

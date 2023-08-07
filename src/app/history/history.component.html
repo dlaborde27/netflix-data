@@ -1,29 +1,26 @@
-<div id="history">
-    <c-carousel>
+<section class="projects-section bg-black" id="history">
+<div >
+    <c-carousel [interval]=3600><h1>La historia de Netflix</h1>
         <c-carousel-indicators class="selector"></c-carousel-indicators>
         <c-carousel-inner>
-            <c-carousel-item *ngFor="let slide of slides">
-                <img
-                    alt="{{ slide.title }}"
-                    class="d-block w-100"
-                    loading="lazy"
-                    src="{{ slide.src }}"
-                />
-                <c-carousel-caption class="d-inline p-2 bg-dark text-white">
-                    <h3>{{ slide.title }}</h3>
-                    <p>{{ slide.subtitle }}</p>
-                </c-carousel-caption>
-            </c-carousel-item>
+          <c-carousel-item *ngFor="let slide of slides">
+            <img
+              alt="{{slide.title}}"
+              class="d-block w-100"
+              loading="lazy"
+              src="{{slide.src}}"
+            />
+            <c-carousel-caption class="d-inline p-2 bg-black text-white">
+              <h3>{{slide.title}}</h3>
+              <p>{{slide.subtitle}}</p>
+            </c-carousel-caption>
+          </c-carousel-item>
         </c-carousel-inner>
-        <c-carousel-control
-            [routerLink]
-            caption="Previous"
-            direction="prev"
-        ></c-carousel-control>
-        <c-carousel-control
-            [routerLink]
-            caption="Next"
-            direction="next"
-        ></c-carousel-control>
-    </c-carousel>
-</div>
+        <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+        <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+      </c-carousel> 
+    </div>
+</section>
+
+    
+    

@@ -61,11 +61,13 @@ h2{
 
 h4{
     text-align: justify;
-    color: #A8A196;
+    color: white;
 }
 .puntacion{
-    color: #000;
+    color: white;
     text-align: center;
+    font-weight: bold;
+    
 }
 
 p{
