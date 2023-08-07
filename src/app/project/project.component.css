@@ -1,12 +1,24 @@
 *{
     font-family: sans-serif;
+}
+
+#projects{
+    display: flex;
+    justify-content: center;
     background-color: #831010;
 }
+
+#projects > div {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-grow: 1;
+}
+
 .projects-section {
     padding-bottom: 3rem;
-    
-    
 }
+
 #catalogo {
     display: flex;
     flex-wrap: wrap;
@@ -21,12 +33,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 30px 20px;
-       
-                   
 }
 
 .titulo{
-    color: white;
+    color: #fff;
     justify-content: center;
     text-align: left;
     font-size: 35px;
@@ -54,7 +64,7 @@ h4{
     color: #A8A196;
 }
 .puntacion{
-    color: rgb(rgb(149, 86, 200), green, blue);
+    color: #000;
     text-align: center;
 }
 
